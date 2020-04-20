@@ -46,6 +46,8 @@ public class Model {
 				bestSoluzione = new HashSet<>(parziale);
 				bestMedia = media;
 			}
+			
+			return ;
 		}
 		
 		//sicuramente, crediti < m
