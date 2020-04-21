@@ -21,8 +21,11 @@ public class Model {
 	
 	public Set<Esame> calcolaSottoinsiemeEsami(int numeroCrediti) {
 		
-		
 		Set<Esame> parziale = new HashSet<>();
+		
+		//ripristino bestSoluzione e bestMedia (fondamentale per eseguire il programma più volte) 
+		bestSoluzione = new  HashSet<>();
+		bestMedia = 0.0;
 		
 		cerca1(parziale, 0, numeroCrediti);
 		
